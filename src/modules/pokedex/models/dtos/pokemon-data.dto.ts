@@ -4,6 +4,7 @@ export interface PokemonDataDto {
   type: string;
   stats: {
     baseStat: number,
-    name: string
-  }[]
+    name: string,
+  }[];
+  imageUrl: string;
 }

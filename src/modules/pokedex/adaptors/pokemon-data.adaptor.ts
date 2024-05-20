@@ -11,7 +11,8 @@ export class PokemonAdaptor {
         stats: data.stats.map(stat => ({
           baseStat: stat?.base_stat,
           name: stat?.stat?.name
-        }))
+        })),
+        imageUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data?.id}.png`
       },
       error: null,
       message: 'Pokemon encontrado com sucesso',
