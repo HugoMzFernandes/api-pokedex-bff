@@ -11,9 +11,9 @@ export class PokedexController {
   constructor(private readonly pokedexService: PokedexService) {}
 
   @Get('/:name')
-  getPokemonByNameData(@Param('name') name: string) {
-    return this.pokedexService
-      .getPokemonByNameData(name)
-      .pipe(catchError(errorResponseHelper));
+  async getPokemonByNameData(@Param('name') name: string) {
+    return (
+      await this.pokedexService.getPokemonByNameData(name)).pipe(catchError(errorResponseHelper)
+    );
   }
 }
