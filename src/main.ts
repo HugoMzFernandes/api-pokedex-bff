@@ -4,6 +4,11 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors({
+    allowedHeaders: ['content-type'],
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+  });
 
   const config = new DocumentBuilder()
     .setTitle('API Pokedex BFF')
