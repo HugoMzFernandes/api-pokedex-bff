@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { Module } from '@nestjs/common';
 import { PokedexModule } from './modules/pokedex/pokedex.module';
 import { ConfigModule } from '@nestjs/config'
