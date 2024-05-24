@@ -8,7 +8,7 @@
 - [Node](https://nodejs.org/)
 - [NestJS](https://nestjs.com/)
 - [Typescript](https://www.typescriptlang.org/)
-- [Swagger][https://swagger.io/]
+- [Swagger](https://swagger.io/)
 - [Redis](https://redis.io/)
 - [Jest](https://jestjs.io/)
 
